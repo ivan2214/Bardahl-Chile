@@ -1,0 +1,87 @@
+{
+  "callToAction": {
+    "title": "Descubre el poder de Bardahl",
+    "subtitle": "Mejora el rendimiento de tus motores",
+    "buttonText": "Ver productos",
+    "buttonUrl": "https://www.bardahl.com"
+  },
+  "hero": {
+    "title": "Bardahl",
+    "subtitle": "La elección de los profesionales",
+    "image": "https://www.example.com/hero-image.jpg"
+  },
+  "opinions": {
+    "title": "Opiniones de personas",
+    "reviews": [
+      {
+        "name": "Juana Pérez",
+        "comment": "¡Los productos de Bardahl son increíbles! He notado una mejora significativa en el rendimiento de mi vehículo desde que los utilizo.",
+        "src": "/icons/avatar.png"
+      },
+      {
+        "name": "María Gómez",
+        "comment": "Recomiendo totalmente los productos de Bardahl. Han prolongado la vida útil de mi motor y reducido el consumo de combustible.",
+        "src": "/icons/avatar2.png"
+      },
+      {
+        "name": "Carla Rodríguez",
+        "comment": "Soy mecánico de profesión y siempre recomiendo los productos de Bardahl a mis clientes. Su calidad y eficacia son indiscutibles.",
+        "src": "/icons/avatar3.png"
+      },
+      {
+        "name": "Ana Fernández",
+        "comment": "Desde que empecé a usar Bardahl, mi automóvil ha mostrado un mejor desempeño y suavidad en la conducción. ¡Estoy muy satisfecha con los resultados!",
+        "src": "/icons/avatar.png"
+      }
+    ]
+  },
+  "whyBuyBardahl": {
+    "title": "¿Por qué comprar productos de Bardahl?",
+    "reasons": [
+      "Calidad superior y confiabilidad",
+      "Resultados comprobados en el cuidado del motor",
+      "Innovación constante en tecnología de aditivos",
+      "Amplia gama de productos para diferentes necesidades",
+      "Más de 80 años de experiencia en el mercado",
+      "Recomendado por profesionales de la industria automotriz",
+      "Mejora el rendimiento y la eficiencia del motor",
+      "Protege contra el desgaste y la corrosión",
+      "Reduce el consumo de combustible",
+      "Contribuye a una mayor vida útil del motor"
+    ]
+  },
+  "productHighlights": [
+    {
+      "name": "Bardahl en el Mundo",
+      "description": [
+        "Desde 1939 Bardahl Manufacturing Corporation continúa siendo fiel a la promesa de producir productos de la más alta calidad.",
+        "A través de su red de distribuidores alcanza a 90 países en América del Norte, la Comunidad Económica Europea, Japón, Oriente, Centro y Sur América, África y otras áreas del mundo."
+      ],
+      "image": "/images/banner-bardahl-en-el-mundo.webp",
+      "videoTitle": "Video de Bardahl Motor Oil",
+      "videoDescription": "Descubre cómo Bardahl Motor Oil mejora el rendimiento de tu motor con este video informativo.",
+      "videoId": "VIDEO_ID_1"
+    },
+    {
+      "name": "Bardahl en la republica de Bolivia",
+      "description": "Desarrollamos productos innovadores de excelente calidad para el cuidado automotriz e industrial que protegen los vehículos y maquinarias de nuestros clientes y consumidores. Nos caracterizamos por ofrecer siempre los más altos estándares de servicio.",
+      "image": "/images/auto-amarillo.webp"
+    },
+    {
+      "name": "Bardahl Fuel Additive",
+      "description": "Nuestro aditivo para combustible ayuda a limpiar los inyectores y mejorar la eficiencia del combustible, reduciendo el consumo y las emisiones.",
+      "image": "https://www.example.com/product2-image.jpg",
+      "videoTitle": "Video de Bardahl Fuel Additive",
+      "videoDescription": "Mira este video para conocer cómo el aditivo para combustible de Bardahl optimiza la calidad de la combustión en tu motor.",
+      "videoId": "VIDEO_ID_2"
+    },
+    {
+      "name": "Bardahl Engine Treatment",
+      "description": "Nuestro tratamiento para el motor protege contra el desgaste, reduce la fricción y mejora el rendimiento general del motor.",
+      "image": "https://www.example.com/product3-image.jpg",
+      "videoTitle": "Video de Bardahl Engine Treatment",
+      "videoDescription": "Descubre cómo Bardahl Engine Treatment maximiza la vida útil de tu motor con este video explicativo.",
+      "videoId": "VIDEO_ID_3"
+    }
+  ]
+}
