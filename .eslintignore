@@ -1,0 +1,5 @@
+**/*.config.js
+**/*.config.ts
+**/*.yaml
+**/*.eslintrc.js
+**/*.config.cjs
