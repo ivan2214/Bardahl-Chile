@@ -10,8 +10,8 @@ interface PreviewModalStore {
 const usePreviewModal = create<PreviewModalStore>((set) => ({
   isOpen: false,
   data: undefined,
-  onOpen: (data: any) => set({ isOpen: true, data }),
-  onClose: () => set({ isOpen: false })
+  onOpen: (data: any) => { set({ isOpen: true, data }) },
+  onClose: () => { set({ isOpen: false }) }
 }))
 
 export default usePreviewModal

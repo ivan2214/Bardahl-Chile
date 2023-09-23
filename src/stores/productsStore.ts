@@ -6,6 +6,7 @@ import { create } from 'zustand'
 
 interface State {
   products: Product[]
+  productDetail: Product
   page: number
   productsPerPage: number
   loading: boolean
@@ -18,12 +19,22 @@ interface Actions {
   nextPage: () => void // Agregar nextPage
   prevPage: () => void // Agregar prevPage
   searchProducts: (query: string) => void
+  getProductDetail: (productName: string) => void
 }
 
 const productsPerPage = 10 // Cambia el número de productos por página según tus necesidades
 
 const initialState: State = {
   products: [],
+  productDetail: {
+    id: 0,
+    name: '',
+    url: '',
+    descripcion: '',
+    whyUseIt: '',
+    benefic: '',
+    instrucctions: ''
+  },
   page: 1,
   productsPerPage,
   loading: false
@@ -85,6 +96,10 @@ const useProductsStore = create<State & Actions>()(
 
         set({ products: filteredProducts })
       }, 400)
+    },
+    getProductDetail (productName) {
+      const productDetail = productsDb.find((product) => product.name === productName)
+      set({ productDetail })
     }
   })
 )

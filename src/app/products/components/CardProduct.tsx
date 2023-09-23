@@ -10,7 +10,7 @@ const CardProduct = ({ product }: Props) => {
     <article className="w-64">
       <section>
         <div className="relative block overflow-hidden">
-          <a href={`/productos/${encodeURIComponent(product.name)}`}>
+          <a href={`/${encodeURIComponent(product.name)}`}>
             <img
               loading="lazy"
               className="mx-auto max-h-full w-full  max-w-full object-cover align-middle"

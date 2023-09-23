@@ -7,7 +7,7 @@ import { useCallback, useEffect, useState } from 'react'
 
 const PreviewModal = () => {
   const previewModal = usePreviewModal()
-  const product = usePreviewModal((state) => state.data)
+  const data = usePreviewModal((state) => state.data)
 
   const [showModal, setShowModal] = useState(previewModal.isOpen)
 
@@ -19,17 +19,19 @@ const PreviewModal = () => {
     previewModal.onClose()
   }, [previewModal])
 
-  if (!product) {
-    return null
-  }
+  if (!data) return null
+  console.log(data)
 
   return (
     <Dialog open={showModal} onOpenChange={onToggle}>
       <DialogContent>
-        <div className="grid w-full grid-cols-1 items-start gap-x-6 gap-y-8 sm:grid-cols-12 lg:gap-x-8">
-          <div className="sm:col-span-4 lg:col-span-5"></div>
-          <div className="sm:col-span-8 lg:col-span-7"></div>
-        </div>
+        <section className="mx-auto h-full w-full">
+          <img
+            alt="ecommerce"
+            className="h-full w-full rounded object-cover object-center hover:scale-110 transition-transform"
+            src={data || 'https://via.placeholder.com/450x450'}
+          />
+        </section>
       </DialogContent>
     </Dialog>
   )
