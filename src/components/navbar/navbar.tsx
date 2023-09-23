@@ -8,7 +8,7 @@ import MainNav from './MainNav'
 import { usePathname } from 'next/navigation'
 import { type Route } from '@/types'
 
-const Navbar = async () => {
+const Navbar = () => {
   const pathname = usePathname()
 
   const routes: Route[] = [
@@ -17,15 +17,16 @@ const Navbar = async () => {
       label: 'Inicio',
       active: pathname === '/'
     },
-    {
-      href: '/category',
-      label: 'Categorías',
-      active: pathname === '/category'
-    },
+
     {
       href: '/products',
       label: 'Productos',
       active: pathname === '/products'
+    },
+    {
+      href: '/about',
+      label: 'Sobre Nosotros',
+      active: pathname === '/about'
     }
   ]
 
