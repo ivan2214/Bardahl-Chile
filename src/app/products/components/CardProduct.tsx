@@ -9,13 +9,13 @@ const CardProduct = ({ product }: Props) => {
   return (
     <article className="h-full w-40 md:w-64">
       <section className="flex h-full flex-col items-center ">
-        <div className="relative block h-2/3 overflow-hidden border rounded ">
+        <div className="relative block rounded-lg drop-shadow-lg hover:shadow-2xl  h-2/3 overflow-hidden rounded border ">
           <a href={`/${encodeURIComponent(product.name)}`}>
             <img
               loading="lazy"
               width="256"
               height="256"
-              className="mx-auto max-h-full w-full  h-full max-w-full object-cover align-middle"
+              className="mx-auto h-full max-h-full  w-full max-w-full object-cover align-middle"
               src={product?.url || 'https://via.placeholder.com/256'}
               alt={product?.name}
             />
