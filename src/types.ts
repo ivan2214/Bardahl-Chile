@@ -30,3 +30,17 @@ interface BenefitsAndlitersToTreat {
   'inye-500': string
   more: string
 }
+
+export interface Tip {
+  image: string
+  title: string
+  slug: string
+  description: string
+  listOfTips: ListOfTips[]
+  callToAction: string
+}
+
+interface ListOfTips {
+  title: string
+  description: string
+}

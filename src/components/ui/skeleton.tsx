@@ -34,7 +34,7 @@ const Skeleton: React.FC<SkeletonProps> = ({
   return (
     <div
       role="status"
-      className={`animate-pulse rounded border border-gray-200 p-4 shadow dark:border-gray-700 md:p-6 ${cardWidth} ${className}`}
+      className={` animate-pulse rounded border border-gray-200 p-4 shadow dark:border-gray-700 md:p-6 ${cardWidth} ${className} overflow-hidden`}
       {...rest}
     >
       <div className={`mb-4 flex items-center justify-center rounded ${cardHeight} ${circleColor}`}>

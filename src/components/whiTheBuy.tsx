@@ -6,7 +6,7 @@ import Link from 'next/link'
 
 const whiTheBuy = () => {
   return (
-    <section className="flex w-full flex-col justify-center gap-10 px-8 py-5 lg:flex-row">
+    <section className="flex w-full flex-col justify-center gap-10 px-8 py-10 lg:flex-row">
       <section className="flex max-w-lg flex-col items-start gap-10">
         <div>
           <p className="text-sm font-light">Destaca con nuestra mercancía</p>

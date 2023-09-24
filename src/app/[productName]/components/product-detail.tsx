@@ -5,13 +5,9 @@ import { type Product } from '@/types'
 
 interface ProductDetailProps {
   productDetail: Product
-
 }
 
-const ProductDetail: React.FC<ProductDetailProps> = ({
-  productDetail
-
-}) => {
+const ProductDetail: React.FC<ProductDetailProps> = ({ productDetail }) => {
   const { onOpen } = usePreviewModal()
 
   const onPreview: MouseEventHandler<HTMLButtonElement> = (event) => {
@@ -23,16 +19,31 @@ const ProductDetail: React.FC<ProductDetailProps> = ({
     <section className="body-font overflow-hidden bg-white text-gray-700">
       <div className="container mx-auto px-5 py-24">
         <div className="mx-auto flex flex-wrap lg:w-4/5">
-          <Button
-            className="h-full w-full border-transparent bg-transparent lg:w-1/3 "
-            onClick={onPreview}
-          >
-            <img
-              alt="ecommerce"
-              className=" rounded  object-cover object-center"
-              src={productDetail?.url || 'https://via.placeholder.com/450x450'}
-            />
-          </Button>
+          {productDetail?.url
+            ? (
+            <Button
+              className="h-full w-full border-transparent bg-transparent lg:w-1/3 "
+              onClick={onPreview}
+            >
+              <img
+                alt={productDetail?.name}
+                className=" rounded  object-cover object-center"
+                src={productDetail?.url}
+              />
+            </Button>
+              )
+            : (
+            <svg
+              className="h-full w-full rounded border-transparent bg-transparent object-cover object-center lg:w-1/3"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 16 20"
+            >
+              <path d="M14.066 0H7v5a2 2 0 0 1-2 2H0v11a1.97 1.97 0 0 0 1.934 2h12.132A1.97 1.97 0 0 0 16 18V2a1.97 1.97 0 0 0-1.934-2ZM10.5 6a1.5 1.5 0 1 1 0 2.999A1.5 1.5 0 0 1 10.5 6Zm2.221 10.515a1 1 0 0 1-.858.485h-8a1 1 0 0 1-.9-1.43L5.6 10.039a.978.978 0 0 1 .936-.57 1 1 0 0 1 .9.632l1.181 2.981.541-1a.945.945 0 0 1 .883-.522 1 1 0 0 1 .879.529l1.832 3.438a1 1 0 0 1-.031.988Z" />
+              <path d="M5 5V.13a2.96 2.96 0 0 0-1.293.749L.879 3.707A2.98 2.98 0 0 0 .13 5H5Z" />
+            </svg>
+              )}
           <div className="mt-6 w-full lg:mt-0 lg:w-1/2 lg:py-6 lg:pl-10">
             <h2 className="title-font mb-1 text-3xl font-bold text-gray-900">
               {productDetail?.name}

@@ -24,6 +24,11 @@ const Navbar = () => {
       active: pathname === '/products'
     },
     {
+      href: '/tips',
+      label: 'Consejos',
+      active: pathname === '/tips'
+    },
+    {
       href: '/about',
       label: 'Sobre Nosotros',
       active: pathname === '/about'
@@ -35,7 +40,10 @@ const Navbar = () => {
       <Container>
         <div className="flex h-16 w-full items-center justify-between px-5 sm:px-6 md:px-8">
           <Link href="/">
-            <p className="text-sm font-bold md:text-xl">Bardahl Chile</p>
+            <div className="flex gap-x-2 items-center">
+              <img width="30" height="40" src="flag-chile.png" />
+              <p className="text-sm font-bold md:text-xl">Bardahl Chile</p>
+            </div>
           </Link>
           <MainNav routes={routes} />
           <MainNavMobile routes={routes} />
