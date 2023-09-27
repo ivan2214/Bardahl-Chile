@@ -1,32 +1,32 @@
-import React from "react";
+import React from 'react'
 
 const OrderProducts = () => {
   const orderTypes = [
     {
-      name: "Popularity",
-      value: "Popularity",
+      name: 'Popularity',
+      value: 'Popularity'
     },
     {
-      name: "Rating",
-      value: "Rating",
+      name: 'Rating',
+      value: 'Rating'
     },
     {
-      name: "Latest",
-      value: "Latest",
+      name: 'Latest',
+      value: 'Latest'
     },
     {
-      name: "Low Price",
-      value: "LowPrice",
+      name: 'Low Price',
+      value: 'LowPrice'
     },
     {
-      name: "High Price",
-      value: "HighPrice",
+      name: 'High Price',
+      value: 'HighPrice'
     },
     {
-      name: "New",
-      value: "New",
-    },
-  ];
+      name: 'New',
+      value: 'New'
+    }
+  ]
   return (
     <select className="w-full rounded-lg border bg-white px-4 py-5 lg:w-auto">
       <option disabled>Sorted by</option>
@@ -36,7 +36,7 @@ const OrderProducts = () => {
         </option>
       ))}
     </select>
-  );
-};
+  )
+}
 
-export default OrderProducts;
+export default OrderProducts
