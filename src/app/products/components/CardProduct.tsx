@@ -9,7 +9,7 @@ const CardProduct = ({ product }: Props) => {
   return (
     <article className="h-full w-40 md:w-64">
       <section className="flex h-full flex-col items-center ">
-        <div className="relative block rounded-lg drop-shadow-lg hover:shadow-2xl  h-2/3 overflow-hidden rounded border ">
+        <div className="relative block h-2/3 overflow-hidden  rounded-lg border drop-shadow-lg hover:shadow-2xl ">
           <a href={`/${encodeURIComponent(product.name)}`}>
             <img
               loading="lazy"
