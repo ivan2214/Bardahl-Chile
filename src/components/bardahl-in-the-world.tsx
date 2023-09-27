@@ -9,12 +9,12 @@ export const BardahlInTheWorld = () => {
           <p className="text-sm font-light">
             Destaca con nuestros internacionales
           </p>
-          <h3 className="text-4xl font-bold">{bardahlWord.name}</h3>
+          <h3 className="text-4xl font-bold">{bardahlWord?.name}</h3>
           <div className="flex flex-col justify-center  gap-5 lg:flex-row">
             <p className="border-b-2 border-dashed border-yellow-400 pb-5 text-sm font-light lg:border-b-0 lg:border-r-2 lg:pb-0 lg:pr-2">
-              {bardahlWord.description[0]}
+              {bardahlWord?.description[0]}
             </p>
-            <p className="text-sm font-light">{bardahlWord.description[1]}</p>
+            <p className="text-sm font-light">{bardahlWord?.description[1]}</p>
           </div>
         </div>
       </section>
@@ -23,8 +23,8 @@ export const BardahlInTheWorld = () => {
         <img
           className="h-full  w-full rounded-lg p-10 shadow drop-shadow-lg hover:shadow-2xl"
           loading="lazy"
-          src={bardahlWord.image}
-          alt={bardahlWord.description[0]}
+          src={bardahlWord?.image}
+          alt={bardahlWord?.description[0]}
         />
       </section>
     </section>

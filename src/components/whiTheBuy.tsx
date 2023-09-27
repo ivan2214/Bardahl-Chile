@@ -25,7 +25,7 @@ const whiTheBuy = () => {
       </section>
 
       <section className="flex flex-col items-start justify-center gap-10">
-        {opinions.reviews.slice(0, 3).map((op, indx) => {
+        {opinions?.reviews?.slice(0, 3).map((op, indx) => {
           return <CardOpinion key={indx} opinion={op} indice={indx} />
         })}
       </section>
