@@ -21,7 +21,7 @@ specifiers:
   eslint-plugin-n: '^15.0.0 || ^16.0.0 '
   eslint-plugin-promise: ^6.0.0
   eslint-plugin-react: ^7.33.2
-  husky: ^8.0.3
+  husky: ^8.0.0
   lint-staged: ^14.0.1
   lucide-react: ^0.279.0
   next: 13.4.19
