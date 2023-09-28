@@ -18,4 +18,9 @@ module.exports = {
     "@typescript-eslint/strict-boolean-expressions": "off",
     "react/prop-types": "off",
   },
+  settings: {
+    react: {
+      version: "detect",
+    },
+  },
 };
