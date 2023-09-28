@@ -5,3 +5,4 @@
 **/*.config.cjs
 **/*.config.
 **/*.eslintrc.js
+next-env.d.ts
